@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Editor - Admin Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface": "#faf9f6",
+                      "on-secondary-fixed-variant": "#3c4a3e",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed-variant": "#564242",
+                      "on-surface-variant": "#4f4444",
+                      "on-secondary-fixed": "#111e14",
+                      "error": "#ba1a1a",
+                      "on-surface": "#1a1c1a",
+                      "on-secondary": "#ffffff",
+                      "surface-container-low": "#f4f3f1",
+                      "primary-fixed-dim": "#dcc0c0",
+                      "on-background": "#1a1c1a",
+                      "surface-container-high": "#e9e8e5",
+                      "on-error": "#ffffff",
+                      "surface-container": "#efeeeb",
+                      "on-tertiary-fixed-variant": "#574500",
+                      "on-tertiary-container": "#775e00",
+                      "tertiary": "#735c00",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-container": "#576659",
+                      "surface-container-lowest": "#ffffff",
+                      "outline-variant": "#d2c3c3",
+                      "tertiary-fixed": "#ffe088",
+                      "surface-tint": "#6f5959",
+                      "on-tertiary-fixed": "#241a00",
+                      "surface-bright": "#faf9f6",
+                      "primary-fixed": "#f9dcdc",
+                      "primary": "#6f5959",
+                      "outline": "#817474",
+                      "on-primary": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "secondary-fixed-dim": "#bbcbbb",
+                      "secondary": "#536255",
+                      "inverse-surface": "#2f312f",
+                      "secondary-fixed": "#d7e7d6",
+                      "surface-variant": "#e3e2e0",
+                      "background": "#faf9f6",
+                      "tertiary-fixed-dim": "#e9c349",
+                      "primary-container": "#f4d7d7",
+                      "on-primary-container": "#725c5c",
+                      "inverse-primary": "#dcc0c0",
+                      "tertiary-container": "#ffda6d",
+                      "secondary-container": "#d4e4d3",
+                      "on-primary-fixed": "#271718",
+                      "inverse-on-surface": "#f2f1ee",
+                      "surface-dim": "#dbdad7",
+                      "surface-container-highest": "#e3e2e0"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "stack-md": "24px",
+                      "container-max": "1280px",
+                      "gutter": "24px",
+                      "stack-lg": "48px",
+                      "stack-sm": "12px",
+                      "margin-mobile": "16px",
+                      "margin-desktop": "40px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "DM Sans"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "label-md": [
+                              "DM Sans"
+                      ],
+                      "caption": [
+                              "DM Sans"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "DM Sans"
+                      ],
+                      "headline-sm": [
+                              "Playfair Display"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+            },
+          }
+        </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Soft, ambient shadows for cards to emulate paper stacking */
+        .ambient-shadow {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex selection:bg-primary-container selection:text-on-primary-container">
+<!-- Admin SideNavBar -->
+<nav class="bg-surface-container-lowest text-secondary fixed left-0 h-full w-64 border-r border-outline-variant/20 shadow-lg flex flex-col py-6 space-y-2 z-40 hidden md:flex transition-all duration-200 ease-in-out">
+<div class="px-6 pb-6 border-b border-outline-variant/10 mb-4 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex items-center justify-center">
+<span class="material-symbols-outlined text-outline">account_circle</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary m-0">Admin Studio</h2>
+<p class="font-caption text-caption text-on-surface-variant">Scrapbook Management</p>
+</div>
+</div>
+<div class="px-4 mb-4">
+<button class="w-full bg-primary-container text-on-primary-container font-label-md text-label-md py-3 rounded-lg flex items-center justify-center gap-2 hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined" style="font-size: 18px;">add</span>
+                New Product
+            </button>
+</div>
+<div class="flex-1 overflow-y-auto">
+<a class="text-on-surface-variant flex items-center px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all duration-200 ease-in-out font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined mr-3" data-icon="dashboard">dashboard</span>
+                Analytics
+            </a>
+<!-- Active State: Inventory matches intent of Product Editor -->
+<a class="bg-secondary-container text-on-secondary-container rounded-full mx-2 flex items-center px-4 py-3 transition-all duration-200 ease-in-out font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined mr-3 icon-fill" data-icon="inventory_2">inventory_2</span>
+                Inventory
+            </a>
+<a class="text-on-surface-variant flex items-center px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all duration-200 ease-in-out font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined mr-3" data-icon="payments">payments</span>
+                Finance
+            </a>
+<a class="text-on-surface-variant flex items-center px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all duration-200 ease-in-out font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined mr-3" data-icon="groups">groups</span>
+                CRM
+            </a>
+<a class="text-on-surface-variant flex items-center px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all duration-200 ease-in-out font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined mr-3" data-icon="settings">settings</span>
+                System
+            </a>
+<a class="text-on-surface-variant flex items-center px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all duration-200 ease-in-out font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined mr-3" data-icon="auto_stories">auto_stories</span>
+                Courses
+            </a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 md:ml-64 p-margin-mobile md:p-margin-desktop bg-surface max-w-container-max w-full mx-auto pb-24">
+<!-- Header -->
+<header class="flex flex-col md:flex-row md:items-end justify-between mb-stack-md gap-4">
+<div>
+<nav aria-label="Breadcrumb" class="flex text-on-surface-variant font-caption text-caption mb-2">
+<ol class="inline-flex items-center space-x-1 md:space-x-3">
+<li class="inline-flex items-center hover:text-primary transition-colors cursor-pointer">
+                            Inventory
+                        </li>
+<li>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-outline" style="font-size: 14px;">chevron_right</span>
+<span class="ml-1 md:ml-2 text-on-surface">Add New Product</span>
+</div>
+</li>
+</ol>
+</nav>
+<h1 class="font-headline-md text-headline-md text-on-surface">Add New Product</h1>
+</div>
+<div class="flex gap-3">
+<button class="px-6 py-2 border border-secondary text-secondary rounded-lg font-label-md text-label-md hover:bg-secondary-container/20 transition-colors">
+                    Save Draft
+                </button>
+<button class="px-6 py-2 bg-primary-container text-on-primary-container rounded-lg font-label-md text-label-md hover:shadow-md transition-shadow">
+                    Publish
+                </button>
+</div>
+</header>
+<!-- Tabs Navigation -->
+<div class="border-b border-outline-variant/30 mb-stack-md">
+<ul class="flex flex-wrap -mb-px text-center" data-tabs-toggle="#myTabContent" id="myTab" role="tablist">
+<li class="mr-6" role="presentation">
+<button class="inline-block p-4 border-b-2 border-primary text-primary font-label-md text-label-md rounded-t-lg active" id="general-tab" role="tab" type="button">General Info</button>
+</li>
+<li class="mr-6" role="presentation">
+<button class="inline-block p-4 border-b-2 border-transparent hover:text-primary hover:border-outline-variant text-on-surface-variant font-label-md text-label-md rounded-t-lg transition-colors" id="gallery-tab" role="tab" type="button">Gallery</button>
+</li>
+<li class="mr-6" role="presentation">
+<button class="inline-block p-4 border-b-2 border-transparent hover:text-primary hover:border-outline-variant text-on-surface-variant font-label-md text-label-md rounded-t-lg transition-colors" id="seo-tab" role="tab" type="button">SEO</button>
+</li>
+<li role="presentation">
+<button class="inline-block p-4 border-b-2 border-transparent hover:text-primary hover:border-outline-variant text-on-surface-variant font-label-md text-label-md rounded-t-lg transition-colors" id="variations-tab" role="tab" type="button">Variations</button>
+</li>
+</ul>
+</div>
+<!-- Form Layout (Bento Grid Style) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Main Editor (Col span 8) -->
+<div class="lg:col-span-8 space-y-stack-md">
+<!-- Basic Info Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 md:p-8 ambient-shadow border border-outline-variant/10">
+<h3 class="font-headline-sm text-headline-sm mb-6 text-on-surface border-b border-outline-variant/20 pb-4">Basic Details</h3>
+<div class="space-y-6">
+<div>
+<label class="block mb-2 font-label-md text-label-md text-on-surface" for="product_name">Product Name</label>
+<input class="bg-surface border border-outline-variant text-on-surface font-body-md rounded-lg focus:ring-primary focus:border-primary block w-full p-3 transition-colors placeholder:text-outline/60" id="product_name" placeholder="e.g. Vintage Floral Washi Tape Set" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block mb-2 font-label-md text-label-md text-on-surface" for="category">Category</label>
+<div class="relative">
+<select class="bg-surface border border-outline-variant text-on-surface font-body-md rounded-lg focus:ring-primary focus:border-primary block w-full p-3 appearance-none transition-colors" id="category">
+<option>Paper Goods</option>
+<option>Adhesives &amp; Tapes</option>
+<option>Writing Instruments</option>
+<option>Albums &amp; Journals</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-on-surface-variant">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</div>
+<div>
+<label class="block mb-2 font-label-md text-label-md text-on-surface" for="sku">SKU (Stock Keeping Unit)</label>
+<input class="bg-surface border border-outline-variant text-on-surface font-body-md rounded-lg focus:ring-primary focus:border-primary block w-full p-3 transition-colors placeholder:text-outline/60" id="sku" placeholder="e.g. WSH-FLR-01" type="text"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Rich Text Editor Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 md:p-8 ambient-shadow border border-outline-variant/10">
+<div class="flex justify-between items-center border-b border-outline-variant/20 pb-4 mb-6">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Description</h3>
+<button class="text-tertiary hover:text-tertiary-container font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined" style="font-size: 16px;">auto_awesome</span>
+                            Generate with AI
+                        </button>
+</div>
+<div class="border border-outline-variant rounded-lg overflow-hidden bg-surface flex flex-col h-96">
+<!-- Toolbar -->
+<div class="bg-surface-container border-b border-outline-variant p-2 flex flex-wrap gap-1 items-center">
+<button class="p-2 hover:bg-surface-container-high rounded text-on-surface-variant transition-colors" title="Bold"><span class="material-symbols-outlined" style="font-size: 18px;">format_bold</span></button>
+<button class="p-2 hover:bg-surface-container-high rounded text-on-surface-variant transition-colors" title="Italic"><span class="material-symbols-outlined" style="font-size: 18px;">format_italic</span></button>
+<button class="p-2 hover:bg-surface-container-high rounded text-on-surface-variant transition-colors" title="Underline"><span class="material-symbols-outlined" style="font-size: 18px;">format_underlined</span></button>
+<div class="w-px h-6 bg-outline-variant/50 mx-1"></div>
+<button class="p-2 hover:bg-surface-container-high rounded text-on-surface-variant transition-colors" title="Heading 1"><span class="material-symbols-outlined" style="font-size: 18px;">format_h1</span></button>
+<button class="p-2 hover:bg-surface-container-high rounded text-on-surface-variant transition-colors" title="Heading 2"><span class="material-symbols-outlined" style="font-size: 18px;">format_h2</span></button>
+<div class="w-px h-6 bg-outline-variant/50 mx-1"></div>
+<button class="p-2 hover:bg-surface-container-high rounded text-on-surface-variant transition-colors" title="Bulleted List"><span class="material-symbols-outlined" style="font-size: 18px;">format_list_bulleted</span></button>
+<button class="p-2 hover:bg-surface-container-high rounded text-on-surface-variant transition-colors" title="Numbered List"><span class="material-symbols-outlined" style="font-size: 18px;">format_list_numbered</span></button>
+<div class="w-px h-6 bg-outline-variant/50 mx-1"></div>
+<button class="p-2 hover:bg-surface-container-high rounded text-on-surface-variant transition-colors" title="Link"><span class="material-symbols-outlined" style="font-size: 18px;">link</span></button>
+<button class="p-2 hover:bg-surface-container-high rounded text-on-surface-variant transition-colors" title="Image"><span class="material-symbols-outlined" style="font-size: 18px;">image</span></button>
+</div>
+<!-- Editor Area -->
+<div class="flex-1 p-4 font-body-md text-on-surface overflow-y-auto focus:outline-none" contenteditable="true">
+<p class="text-outline/60">Describe the tactile qualities, dimensions, and ideal uses for this item...</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Settings Sidebar (Col span 4) -->
+<div class="lg:col-span-4 space-y-stack-md">
+<!-- Status & Visibility -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 ambient-shadow border-t-2 border-tertiary-fixed">
+<h3 class="font-headline-sm text-headline-sm mb-4 text-on-surface">Publishing</h3>
+<div class="space-y-4">
+<div>
+<label class="block mb-2 font-label-md text-label-md text-on-surface">Status</label>
+<div class="relative">
+<select class="bg-surface border border-outline-variant text-on-surface font-body-md rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 appearance-none">
+<option>Draft</option>
+<option>Active</option>
+<option>Archived</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-on-surface-variant">
+<span class="material-symbols-outlined" style="font-size: 20px;">expand_more</span>
+</div>
+</div>
+</div>
+<div class="pt-2">
+<label class="flex items-center cursor-pointer">
+<div class="relative">
+<input class="sr-only" id="toggle" type="checkbox"/>
+<div class="block bg-surface-variant w-10 h-6 rounded-full border border-outline-variant transition"></div>
+<div class="dot absolute left-1 top-1 bg-surface-container-lowest w-4 h-4 rounded-full transition transform border border-outline-variant shadow-sm"></div>
+</div>
+<div class="ml-3 font-body-md text-on-surface">
+                                    Feature on Storefront
+                                </div>
+</label>
+</div>
+<style>
+                            /* Simple toggle animation logic */
+                            input:checked ~ .dot { transform: translateX(100%); background-color: #536255; border-color: #536255; }
+                            input:checked ~ .block { background-color: #d4e4d3; border-color: #d4e4d3; }
+                        </style>
+</div>
+</div>
+<!-- Pricing -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 ambient-shadow border border-outline-variant/10">
+<h3 class="font-headline-sm text-headline-sm mb-4 text-on-surface">Pricing</h3>
+<div class="space-y-4">
+<div>
+<label class="block mb-2 font-label-md text-label-md text-on-surface" for="price">Base Price</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<span class="text-on-surface-variant font-body-md">$</span>
+</div>
+<input class="bg-surface border border-outline-variant text-on-surface font-body-md rounded-lg focus:ring-primary focus:border-primary block w-full pl-8 p-2.5" id="price" placeholder="0.00" type="number"/>
+</div>
+</div>
+<div>
+<label class="block mb-2 font-label-md text-label-md text-on-surface text-outline" for="compare_price">Compare at Price (Optional)</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<span class="text-on-surface-variant font-body-md">$</span>
+</div>
+<input class="bg-surface border border-outline-variant text-on-surface font-body-md rounded-lg focus:ring-primary focus:border-primary block w-full pl-8 p-2.5 opacity-70" id="compare_price" placeholder="0.00" type="number"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Image -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 ambient-shadow border border-outline-variant/10">
+<h3 class="font-headline-sm text-headline-sm mb-4 text-on-surface">Featured Media</h3>
+<div class="border-2 border-dashed border-outline-variant/50 rounded-xl p-6 flex flex-col items-center justify-center text-center hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">add_a_photo</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface mb-1">Click to upload</p>
+<p class="font-caption text-caption text-outline">SVG, PNG, JPG or GIF (max. 5MB)</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

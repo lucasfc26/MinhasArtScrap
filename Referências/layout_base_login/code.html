@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Artisanal Archive - Login</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "inverse-on-surface": "#f2f1ee",
+                    "secondary": "#536255",
+                    "surface-dim": "#dbdad7",
+                    "on-secondary-fixed": "#111e14",
+                    "on-surface-variant": "#4f4444",
+                    "surface-container-low": "#f4f3f1",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "on-primary-fixed": "#271718",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#f9dcdc",
+                    "on-secondary": "#ffffff",
+                    "outline": "#817474",
+                    "on-primary-container": "#725c5c",
+                    "on-secondary-fixed-variant": "#3c4a3e",
+                    "secondary-fixed": "#d7e7d6",
+                    "on-primary-fixed-variant": "#564242",
+                    "on-background": "#1a1c1a",
+                    "secondary-container": "#d4e4d3",
+                    "on-secondary-container": "#576659",
+                    "surface-container": "#efeeeb",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "secondary-fixed-dim": "#bbcbbb",
+                    "inverse-surface": "#2f312f",
+                    "tertiary": "#735c00",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#ffda6d",
+                    "primary-container": "#f4d7d7",
+                    "outline-variant": "#d2c3c3",
+                    "tertiary-fixed": "#ffe088",
+                    "error": "#ba1a1a",
+                    "surface": "#faf9f6",
+                    "surface-tint": "#6f5959",
+                    "on-tertiary-container": "#775e00",
+                    "surface-variant": "#e3e2e0",
+                    "surface-bright": "#faf9f6",
+                    "on-tertiary-fixed": "#241a00",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#e9e8e5",
+                    "background": "#faf9f6",
+                    "primary-fixed-dim": "#dcc0c0",
+                    "inverse-primary": "#dcc0c0",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e3e2e0",
+                    "on-surface": "#1a1c1a",
+                    "primary": "#6f5959"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-md": "24px",
+                    "stack-sm": "12px",
+                    "container-max": "1280px",
+                    "margin-mobile": "16px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "margin-desktop": "40px",
+                    "stack-lg": "48px"
+            },
+            "fontFamily": {
+                    "headline-sm": [
+                            "Playfair Display"
+                    ],
+                    "display-lg-mobile": [
+                            "Playfair Display"
+                    ],
+                    "display-lg": [
+                            "Playfair Display"
+                    ],
+                    "headline-md": [
+                            "Playfair Display"
+                    ],
+                    "body-lg": [
+                            "DM Sans"
+                    ],
+                    "caption": [
+                            "DM Sans"
+                    ],
+                    "label-md": [
+                            "DM Sans"
+                    ],
+                    "body-md": [
+                            "DM Sans"
+                    ]
+            },
+            "fontSize": {
+                    "headline-sm": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-md": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "caption": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .paper-texture {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+        }
+
+        .input-glow:focus {
+            box-shadow: 0 0 0 2px rgba(244, 215, 215, 0.5); /* primary-container with opacity */
+            border-color: #f4d7d7; /* primary-container */
+        }
+    </style>
+</head>
+<body class="bg-background min-h-screen flex items-center justify-center relative overflow-hidden font-body-md text-on-surface">
+<!-- Subtle Background Image -->
+<div class="absolute inset-0 w-full h-full z-0 opacity-[0.15] bg-cover bg-center" data-alt="A soft, overhead view of a premium crafting desk bathed in warm, diffused morning sunlight. The scene features elegant scrapbook materials scattered aesthetically: vintage paper ephemera, delicate lace ribbons, and subtle gold foil stickers on a creamy, textured background. The overall tone is modern, minimalist, and serene, utilizing a light cream and pastel palette to convey a sense of calm creativity and high-end curation." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBEf37Vs_JoIW2s3dJnLp4NudigrlwB4uzR43T_l_7EciKQ-wNP5FJsW5X-AgpjDNHWt6iFM7ZpBpUKCUAzz1XPRVtaoLgIv0jp8cOxuiTJ9jKULhoxG6MuxLWdvJmEwiRHz4rvl8VRnl4TEtWihNLVNiXtxI6TGaXMDohkRbsLxkoHZBcri8J6j_r0mKePPowv1tMplhWde5WG3EWljr3JWR-uNWzeRJaecfhxX8RLgjf3ZKfV6faTGcWLjBvgNwLJXTy-3_-u2kc')"></div>
+<div class="absolute inset-0 w-full h-full z-0 bg-background/60 backdrop-blur-[2px]"></div>
+<!-- Login Container -->
+<div class="relative z-10 w-full max-w-[440px] px-margin-mobile md:px-0">
+<!-- Glassmorphism Card -->
+<div class="bg-surface-container-lowest/90 backdrop-blur-md rounded-xl p-stack-lg shadow-[0px_4px_30px_rgba(0,0,0,0.06)] border border-surface-variant/50 relative overflow-hidden paper-texture">
+<!-- Delicate Gold Accent Line -->
+<div class="absolute top-0 left-0 w-full h-[2px] bg-tertiary-fixed-dim opacity-70"></div>
+<!-- Header -->
+<div class="text-center mb-stack-lg">
+<h1 class="text-headline-md font-headline-md text-primary mb-2 tracking-tight">Artisanal Archive</h1>
+<p class="text-body-md font-body-md text-on-surface-variant">Sign in to your curated collection</p>
+</div>
+<!-- Form -->
+<form action="#" class="space-y-stack-md" method="POST">
+<!-- Email Field -->
+<div>
+<label class="block text-label-md font-label-md text-on-surface mb-unit uppercase tracking-wider" for="email">Email Address</label>
+<div class="relative">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 text-on-surface-variant/50">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface border border-outline-variant rounded-lg text-body-md font-body-md text-on-surface focus:outline-none transition-all duration-300 input-glow placeholder:text-on-surface-variant/40" id="email" name="email" placeholder="hello@studio.com" required="" type="email"/>
+</div>
+</div>
+<!-- Password Field -->
+<div>
+<div class="flex justify-between items-center mb-unit">
+<label class="block text-label-md font-label-md text-on-surface uppercase tracking-wider" for="password">Password</label>
+<a class="text-caption font-caption text-primary hover:text-primary-fixed-dim transition-colors duration-200" href="#">Forgot password?</a>
+</div>
+<div class="relative">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 text-on-surface-variant/50">
+<span class="material-symbols-outlined" data-icon="lock">lock</span>
+</span>
+<input class="w-full pl-10 pr-10 py-3 bg-surface border border-outline-variant rounded-lg text-body-md font-body-md text-on-surface focus:outline-none transition-all duration-300 input-glow placeholder:text-on-surface-variant/40" id="password" name="password" placeholder="••••••••" required="" type="password"/>
+<button class="absolute inset-y-0 right-0 flex items-center pr-3 text-on-surface-variant/50 hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+<!-- Submit Button -->
+<button class="w-full py-3 px-4 bg-primary-container text-on-primary-container text-label-md font-label-md rounded-lg uppercase tracking-wider hover:bg-primary-fixed hover:shadow-md transition-all duration-300 flex justify-center items-center gap-2 mt-stack-md border border-primary-fixed/50" type="submit">
+                    Sign In
+                    <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</form>
+<!-- Footer / Secondary Actions -->
+<div class="mt-stack-lg text-center">
+<p class="text-caption font-caption text-on-surface-variant">
+                    Don't have a studio account? 
+                    <a class="text-primary hover:text-primary-fixed-dim transition-colors duration-200 border-b border-primary/30 pb-0.5 ml-1" href="#">Request Access</a>
+</p>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Artisanal Archive - Scrapbook Storefront</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config injected from system prompt -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary": "#ffffff",
+                      "inverse-on-surface": "#f2f1ee",
+                      "secondary": "#536255",
+                      "surface-dim": "#dbdad7",
+                      "on-secondary-fixed": "#111e14",
+                      "on-surface-variant": "#4f4444",
+                      "surface-container-low": "#f4f3f1",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed-variant": "#574500",
+                      "on-primary-fixed": "#271718",
+                      "on-primary": "#ffffff",
+                      "primary-fixed": "#f9dcdc",
+                      "on-secondary": "#ffffff",
+                      "outline": "#817474",
+                      "on-primary-container": "#725c5c",
+                      "on-secondary-fixed-variant": "#3c4a3e",
+                      "secondary-fixed": "#d7e7d6",
+                      "on-primary-fixed-variant": "#564242",
+                      "on-background": "#1a1c1a",
+                      "secondary-container": "#d4e4d3",
+                      "on-secondary-container": "#576659",
+                      "surface-container": "#efeeeb",
+                      "tertiary-fixed-dim": "#e9c349",
+                      "secondary-fixed-dim": "#bbcbbb",
+                      "inverse-surface": "#2f312f",
+                      "tertiary": "#735c00",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-container": "#ffda6d",
+                      "primary-container": "#f4d7d7",
+                      "outline-variant": "#d2c3c3",
+                      "tertiary-fixed": "#ffe088",
+                      "error": "#ba1a1a",
+                      "surface": "#faf9f6",
+                      "surface-tint": "#6f5959",
+                      "on-tertiary-container": "#775e00",
+                      "surface-variant": "#e3e2e0",
+                      "surface-bright": "#faf9f6",
+                      "on-tertiary-fixed": "#241a00",
+                      "on-error-container": "#93000a",
+                      "surface-container-high": "#e9e8e5",
+                      "background": "#faf9f6",
+                      "primary-fixed-dim": "#dcc0c0",
+                      "inverse-primary": "#dcc0c0",
+                      "on-error": "#ffffff",
+                      "surface-container-highest": "#e3e2e0",
+                      "on-surface": "#1a1c1a",
+                      "primary": "#6f5959"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-md": "24px",
+                      "stack-sm": "12px",
+                      "container-max": "1280px",
+                      "margin-mobile": "16px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "margin-desktop": "40px",
+                      "stack-lg": "48px"
+              },
+              "fontFamily": {
+                      "headline-sm": [
+                              "Playfair Display"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "body-lg": [
+                              "DM Sans"
+                      ],
+                      "caption": [
+                              "DM Sans"
+                      ],
+                      "label-md": [
+                              "DM Sans"
+                      ],
+                      "body-md": [
+                              "DM Sans"
+                      ]
+              },
+              "fontSize": {
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      }
+              }
+      },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col font-body-md text-body-md">
+<!-- TopNavBar (Shared Component JSON injected) -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-sm sticky top-0 z-50 flex items-center justify-between px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto py-4 shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
+<!-- Left: Navigation Links (Desktop) -->
+<nav class="hidden md:flex gap-6 items-center">
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary pb-1 text-label-md font-label-md hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Shop</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-md font-label-md hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Collections</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-md font-label-md hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Courses</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-md font-label-md hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">Workshops</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-md font-label-md hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#">About</a>
+</nav>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<!-- Center: Brand Logo -->
+<div class="text-headline-md font-headline-md text-primary dark:text-primary-fixed-dim absolute left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+            Artisanal Archive
+        </div>
+<!-- Right: Actions & Search -->
+<div class="flex items-center gap-4">
+<div class="hidden md:flex items-center bg-surface-container-low rounded-full px-3 py-1 border border-outline-variant focus-within:border-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-outline text-sm mr-2">search</span>
+<input class="bg-transparent border-none outline-none text-body-md font-body-md text-on-surface-variant focus:ring-0 w-32 placeholder-outline" placeholder="Search..." type="text"/>
+</div>
+<button class="text-primary hover:text-primary-fixed-dim transition-colors duration-200 hover:scale-[0.99] transition-transform">
+<span class="material-symbols-outlined text-[24px]">shopping_cart</span>
+</button>
+<button class="text-primary hover:text-primary-fixed-dim transition-colors duration-200 hover:scale-[0.99] transition-transform hidden sm:block">
+<span class="material-symbols-outlined text-[24px]">account_circle</span>
+</button>
+<button class="text-primary hover:text-primary-fixed-dim transition-colors duration-200 hover:scale-[0.99] transition-transform hidden sm:block">
+<span class="material-symbols-outlined text-[24px]">notifications</span>
+</button>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg flex flex-col gap-stack-lg">
+<!-- Hero Section Placeholder -->
+<section class="relative w-full h-[614px] min-h-[400px] rounded-2xl overflow-hidden bg-surface-container-lowest shadow-[0px_4px_20px_rgba(0,0,0,0.04)] flex items-center justify-center border border-outline-variant/30">
+<!-- Background Image -->
+<div class="absolute inset-0 bg-cover bg-center w-full h-full opacity-60" data-alt="A beautifully arranged layout of premium vintage scrapbook materials on a clean white desk. Sunlight casts soft, warm shadows across textured artisan paper, delicate gold foil stickers, and dried botanical sprigs. The color palette is composed of soft pastel pinks, creams, and sage greens. The mood is inspiring, highly organized, and aesthetic, shot from a top-down minimalist perspective." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDsQ-N6TCaBB1WgAb7VPyGCs3ZDS2qfq4MTkbL2qeK1UJBkEDRctCJeuG40luS-OSv_7fqWHnYeZ_hRPS190MwBHTh4n-EbKLSZNDnr2cG3GUfc9YY2Vos70bd6HPMFB8foImAyup5fg-Op_O1kDAF-sZyQVVIwfBaqHGE-snrbfV1ysCuEcLix3YPtqe4BahtHytbZJXNTTPzBJnYnzAVvaM8CxZvH1T4yfU5T1mEAi7nbpVg1N_u_yn0ucBMYOj3z_D8VK9mS-qQ')"></div>
+<!-- Hero Content Overlay -->
+<div class="relative z-10 text-center p-8 bg-surface/70 backdrop-blur-sm rounded-xl border border-surface-variant max-w-2xl mx-auto shadow-sm">
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg-mobile md:font-display-lg text-primary mb-4">Curate Your Memories</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-8 max-w-md mx-auto">Discover our handcrafted collection of premium papers, tools, and embellishments for the modern storyteller.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary-container text-on-primary-container px-6 py-3 rounded-lg text-label-md font-label-md shadow-sm hover:shadow-md transition-shadow">Shop Collection</button>
+<button class="bg-transparent border border-secondary text-secondary px-6 py-3 rounded-lg text-label-md font-label-md hover:bg-surface-container-low transition-colors">Join a Workshop</button>
+</div>
+</div>
+</section>
+<!-- Featured Categories (Bento Grid) -->
+<section class="flex flex-col gap-stack-md">
+<h2 class="text-headline-md font-headline-md text-primary text-center">Featured Curation</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter h-auto md:h-[500px]">
+<!-- Large Featured Card -->
+<div class="md:col-span-2 relative rounded-2xl overflow-hidden group bg-surface-container-lowest shadow-[0px_4px_20px_rgba(0,0,0,0.04)] border-t-[2px] border-tertiary flex flex-col justify-end p-6">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out opacity-80 mix-blend-multiply" data-alt="A close-up shot of luxurious, thick cream-colored artisan paper stacked elegantly. A delicate pastel pink silk ribbon wraps around the stack, resting on a muted sage green surface. Soft natural lighting highlights the rough, handmade texture of the paper edges. The style is modern minimalist yet deeply tactile and inviting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSyUEGCbJyJsTTLlKqj0ZPk16nn3Xk_Ehl12HaG1DnNmCmMPDlvejA3BGpOT_T9vaQybzguqYOep0CJNCbYrYTagpPiRiSeTayEdfUJKW3Eqv5blacU67DYBVgYR05-QKDW4CJKetQzAybOKBeQOMj6DzOw3Zx5LoDZGjKsrBOrt2SRmKdhSl66kCl6rQls1LxwE53rdeMehhWyEWEAMssbhQK85mTEfrzcMPLfD93Yx81cg0F5vnpUy3HolfMYrk2MV00HY2KTvg"/>
+<div class="relative z-10 bg-surface/80 backdrop-blur-sm p-4 rounded-xl self-start w-full md:w-auto shadow-sm">
+<h3 class="text-headline-sm font-headline-sm text-primary mb-1">The Heritage Paper Collection</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-3">Hand-pressed, 100% cotton rag paper in soft hues.</p>
+<a class="text-tertiary font-label-md text-label-md flex items-center gap-1 hover:underline underline-offset-4" href="#">Explore Collection <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+<!-- Stacked Smaller Cards -->
+<div class="flex flex-col gap-gutter md:col-span-1 h-full">
+<div class="relative rounded-2xl overflow-hidden flex-1 group bg-surface-container-lowest shadow-[0px_4px_20px_rgba(0,0,0,0.04)] border border-outline-variant/30 flex items-end p-4">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out opacity-80 mix-blend-multiply" data-alt="A collection of elegant brass and gold-toned crafting tools, including fine-tipped scissors, a wax seal stamp, and a small metal ruler, arranged neatly on a pastel pink background. The lighting is crisp and modern, creating soft drop shadows that emphasize the high-quality, premium nature of the tools." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhaI2I9YjsLUkntBJcODF_QqXuUc5jtWm_joXYRKA0fqXTcQVSUGaLM5erv9JC5tObCU6q3YopCk9oIz81PQ5nT4OXuI8ozJpySpRvIOCmZUkn_xdJbq4-cAi594Kd3Gl9eEdFdYTz0UJBS3bcw28wXPoDbXsLd4U9a80WMbv73hu8QXuPkber9_hh5apcJ0dP-LV2bIFXxwp7ndvf_Y58fD4xQKh0DNcI8v6nCCtXcJK_l9tZ4_vh52vT-mlDG8PcbcJeRH_BHMo"/>
+<div class="relative z-10 bg-surface/80 backdrop-blur-sm p-3 rounded-lg w-full shadow-sm">
+<h3 class="text-body-lg font-body-lg text-primary font-semibold">Premium Tools</h3>
+<a class="text-secondary font-label-md text-label-md flex items-center gap-1 mt-1" href="#">Shop Tools <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+</div>
+<div class="relative rounded-2xl overflow-hidden flex-1 group bg-secondary-container shadow-[0px_4px_20px_rgba(0,0,0,0.04)] border border-outline-variant/30 flex items-center justify-center p-6 text-center">
+<div class="relative z-10 w-full">
+<span class="material-symbols-outlined text-4xl text-on-secondary-container mb-2">auto_awesome</span>
+<h3 class="text-headline-sm font-headline-sm text-on-secondary-container mb-2">New Arrivals</h3>
+<p class="text-caption font-caption text-on-secondary-container/80 mb-4">Discover the latest seasonal additions to our store.</p>
+<button class="bg-surface text-secondary px-4 py-2 rounded-lg text-label-md font-label-md shadow-sm w-full hover:bg-surface-container-low transition-colors">View All</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component JSON injected) -->
+<footer class="w-full py-stack-lg px-margin-mobile md:px-margin-desktop flex flex-col items-center gap-stack-md bg-surface-container-low dark:bg-surface-container-low border-t border-outline-variant mt-auto">
+<div class="text-headline-md font-headline-md text-primary mb-4 text-center w-full">
+            Artisanal Archive
+        </div>
+<nav class="flex flex-wrap justify-center gap-4 md:gap-8 mb-4">
+<a class="text-on-surface-variant hover:text-primary hover:underline underline-offset-4 transition-all text-body-md font-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary hover:underline underline-offset-4 transition-all text-body-md font-body-md" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary hover:underline underline-offset-4 transition-all text-body-md font-body-md" href="#">Shipping &amp; Returns</a>
+<a class="text-on-surface-variant hover:text-primary hover:underline underline-offset-4 transition-all text-body-md font-body-md" href="#">Contact Us</a>
+<a class="text-on-surface-variant hover:text-primary hover:underline underline-offset-4 transition-all text-body-md font-body-md" href="#">Wholesale</a>
+</nav>
+<p class="text-caption font-caption text-on-surface-variant dark:text-on-surface-variant text-center opacity-80">
+            © 2024 Artisanal Archive. Handcrafted with Care.
+        </p>
+</footer>
+</body></html>
