@@ -41,7 +41,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col gap-4 border-t border-border pt-6 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} Ateliê Papel · CNPJ 00.000.000/0001-00 · Curitiba, PR</p>
+          <p>© {new Date().getFullYear()} Ateliê Papel · CNPJ 00.000.000/0001-00 · Fortaleza, CE</p>
           <div className="flex flex-wrap items-center gap-3">
             <span className="opacity-70">Pagamento seguro:</span>
             {["Visa", "Master", "Elo", "Pix", "Boleto"].map((m) => (

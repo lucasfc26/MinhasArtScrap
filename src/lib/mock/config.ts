@@ -2,8 +2,8 @@ export const empresaConfig = {
   razaoSocial: "Ateliê Papel Ltda",
   cnpj: "00.000.000/0001-00",
   email: "contato@ateliepapel.com.br",
-  whatsapp: "(41) 99999-0000",
-  endereco: "Rua das Flores, 123 — Curitiba, PR",
+  whatsapp: "(85) 99999-0000",
+  endereco: "Rua Barbosa de Freitas, 123 — Fortaleza, CE",
 };
 
 export const usuariosAdmin = [

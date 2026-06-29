@@ -39,10 +39,10 @@ function CheckoutPage() {
                 </div>
                 <div className="mt-4 grid gap-3 sm:grid-cols-2">
                   <div><Label>Nome</Label><Input className="mt-1 rounded-xl" defaultValue="Maria Silva" /></div>
-                  <div><Label>CEP</Label><Input className="mt-1 rounded-xl" defaultValue="80000-000" /></div>
-                  <div className="sm:col-span-2"><Label>Endereço</Label><Input className="mt-1 rounded-xl" defaultValue="Rua das Flores, 123" /></div>
-                  <div><Label>Cidade</Label><Input className="mt-1 rounded-xl" defaultValue="Curitiba" /></div>
-                  <div><Label>Estado</Label><Input className="mt-1 rounded-xl" defaultValue="PR" /></div>
+                  <div><Label>CEP</Label><Input className="mt-1 rounded-xl" defaultValue="60160-120" /></div>
+                  <div className="sm:col-span-2"><Label>Endereço</Label><Input className="mt-1 rounded-xl" defaultValue="Rua Barbosa de Freitas, 123" /></div>
+                  <div><Label>Cidade</Label><Input className="mt-1 rounded-xl" defaultValue="Fortaleza" /></div>
+                  <div><Label>Estado</Label><Input className="mt-1 rounded-xl" defaultValue="CE" /></div>
                 </div>
               </GlassCard>
             </ScrollReveal>

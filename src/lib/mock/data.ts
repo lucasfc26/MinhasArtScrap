@@ -58,7 +58,7 @@ export const cursos = [
 ];
 
 export const depoimentos = [
-  { nome: "Camila R.", texto: "Os papéis chegam impecáveis e o atendimento é um carinho. Já é minha papelaria oficial.", cidade: "Curitiba, PR" },
+  { nome: "Camila R.", texto: "Os papéis chegam impecáveis e o atendimento é um carinho. Já é minha papelaria oficial.", cidade: "Fortaleza, CE" },
   { nome: "Renata P.", texto: "A coleção Doce Memória transformou o álbum do meu casamento. Apaixonada!", cidade: "Recife, PE" },
   { nome: "Helena S.", texto: "Os cursos são detalhistas e calmos. Aprendi mais em duas semanas do que em meses.", cidade: "Belo Horizonte, MG" },
 ];
